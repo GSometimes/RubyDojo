@@ -60,8 +60,13 @@ Reveal
 
 ```ruby
     def attack(opp)
-        opp.life = opp.life - (@strength - opp.defense)
-        puts "#{opp.name} now has #{opp.life} life left"
+        damage = @strength - opp.defense
+        if damage <= 0
+            puts "#{name} could not do damage to #{opp.name}"
+        else
+            opp.life = opp.life - damage
+            puts "#{opp.name} took #{damage} now has #{opp.life} life left"
+        end
     end
 ```
 </p>
@@ -100,6 +105,7 @@ class Dojo
 
     def self.lift_weights(fighter)
         fighter.strength += 1
+        puts "You are feeling your strength surge"
     end
 
 end
@@ -151,13 +157,13 @@ while true
     player.attack(akuma)
     akuma.attack(player)
 
-    if player.life >= 0
+    if player.life <= 0
         puts "Akuma has won the battle!"
         break
     end
 
-    if akuma.life >= 0
-        puts "#{player.life} has won the battle!"
+    if akuma.life <= 0
+        puts "#{player.name} has won the battle!"
         break
     end
 end
