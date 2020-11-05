@@ -67,7 +67,7 @@ When creating any application we should first define our classes that we will be
 
 #### 🍬 Fighter Methods  
 
-````ruby
+```ruby
 # attack(opponent)
 # => function that takes `opponent` object as argument and does damage equal to strength
 
