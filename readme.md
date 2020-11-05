@@ -54,13 +54,125 @@ attack(opponent) => function that takes opponent object as argument and does dam
 
 <details>
 <summary>
-**HINT**
+Reveal
 </summary>
 <p>
+
 ```ruby
-def attack(opp)
-    opp.setLife(opp.getLife - @strength)
+    def attack(opp)
+        opp.life = opp.life - (@strength - opp.defense)
+        puts "#{opp.name} now have #{opp.life} life left"
+    end
+```
+</p>
+</details>
+
+**STOP** Before you go further test your fighter class, create a new fighter or two and test the functions and properties.
+
+```ruby
+ken = Fighter.new("Ken", 5,5,5,5)
+ryu = Fighter.new("Ryu", 7,7,7,7)
+puts ken.life
+ryu.attack(ken)
+puts ken.life
+```
+
+#### Dojo Class
+
+This class represents how the fighter trains each week, so the methods represent activites at the dojo. There is only one dojo so all the methods should be class methods no instance methods.
+
+**methods to create:**
+
+lift_weights(fighter) => takes in fighter and adds 1 to strength
+endurance_training(fighter) => takes in fighter and adds 1 to defense
+coin_in_fountain(fighter) => takes in fighter and adds 1 to strength
+
+**HINT**
+
+<details>
+<summary>
+Reveal
+</summary>
+<p>
+
+```ruby
+class Dojo
+
+    def self.lift_weights(fighter)
+        fighter.strength += 1
+    end
+
+end
+
+ken = Fighter.new("Ken", 5,5,5,5)
+ryu = Fighter.new("Ryu", 7,7,7,7)
+
+puts ryu.strength
+Dojo.lift_weights(ryu)
+puts ryu.strength
+```
+</p>
+</details>
+
+## Creating the Game
+
+** Follow the Psuedo Code for the game below **
+
+Step 1 - create character
+ - welcome player to game and ask for their name
+ - use gets to get players name in variable
+ - create new fighter ```player = Fighter.new(name, 0,0,0, 10)```
+ * all their stats start at 0 except life which is 10 *
+ - create their opponent ```Akuma = Fighter.new("Akuma", 4,4,4,10)```
+
+Step 2 - Training Loop
+ - put a prompt telling the story and explaining the game
+ - create a while look that will loop 10 times
+ - in the while loop ask the player how they'd like to train that week
+ - based on their choice invoke the right dojo function to train the player
+
+Step 3 - The Battle
+ - after the previous while loop create prompt explaining the big battle has arrived
+ - create an infinite loop
+ - have the player and their opponent take turns attacking each other
+ - at the end of each loop check the life of both fighters
+ - if one is at 0 or below, break the loop and declare the survivor the winner
+
+ **HINT**
+
+<details>
+<summary>
+Reveal
+</summary>
+<p>
+
+```ruby
+while true
+    player.attack(akuma)
+    akuma.attack(player)
+
+    if player.life >= 0
+        puts "Akuma has won the battle!"
+        break
+    end
+
+    if akuma.life >= 0
+        puts "#{player.life} has won the battle!"
+        break
+    end
 end
 ```
 </p>
 </details>
+
+## Things to Consider
+
+- Make sure you tested the fighters thoroughly so you don't end up with an infinite loop cause they can't do damage to each other or they accidentally increase each others life (you may want to add a test in attach in case they end up doing negative damage)
+
+## Hungry For More
+Want to make your game more fun!
+
+- Make the opponent have random stats
+- Use the Luck stat to test whether an attack may miss
+- add other activities at the dojo
+- be creative
