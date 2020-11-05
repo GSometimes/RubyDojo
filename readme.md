@@ -63,7 +63,7 @@ When creating any application we should first define our classes that we will be
 ❗ *setters* are methods to alter a value
 ```
 
-**HINT:** To make it easier to create your getter and setters google attr_accessor, attr_reader and attr_writer
+**HINT:** To make it easier to create your getter and setters google: `attr_accessor`, `attr_reader` and `attr_writer`
 
 #### 🍬 Fighter Methods  
 
@@ -80,6 +80,8 @@ When creating any application we should first define our classes that we will be
 Reveal
 </summary>
 <p>
+
+![jackie as street fighter](https://media.giphy.com/media/YsrYvT97gQpi0/giphy.gif)
 
 ```ruby
     def attack(opp)
@@ -102,16 +104,17 @@ Reveal
 ```ruby
 ken = Fighter.new("Ken", 5,5,5,5)
 ryu = Fighter.new("Ryu", 7,7,7,7)
+
 puts ken.life
 ryu.attack(ken)
 puts ken.life
 ```
 
-*** 
+***
 
 ## Step 2 - Dojo Class 🏟️
 
-This class represents how the fighter trains each week, so the methods represent activites at the dojo. There is only one dojo so all the methods should be class methods no instance methods.
+This class represents how the fighter trains each week, so the methods represent activities at the dojo. There is only one dojo so all the methods should be class methods no instance methods.
 
 **methods to create:**
 
@@ -154,7 +157,7 @@ puts ryu.strength
 
 ## Step 3 - Creating the Game
 
-👉 Follow the Psuedo Code for the game below
+👉 Follow the psuedocode for the game below
 
 Step 1 - create character
 ```ruby
@@ -220,8 +223,8 @@ end
 
 ## 👉 Things to Consider
 
-- Make sure you tested the fighters thoroughly so you don't end up with an infinite loop cause they can't do damage to each other 
-- They accidentally increase each others life 
+- Make sure you tested the fighters thoroughly so you don't end up with an infinite loop cause they can't do damage to each other
+- They accidentally increase each others life
 - (you may want to add a test in attach in case they end up doing negative damage)
 
 ## Hungry For More
