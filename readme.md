@@ -8,9 +8,6 @@
 
 ### Read: N/A
 
-
-
-## Objectives
 ### Algo Practice: N/A
 
 ### Interview Practice: N/A
