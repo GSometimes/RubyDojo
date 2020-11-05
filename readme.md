@@ -1,14 +1,16 @@
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+
 # Dojo Fighter
 
-##### By Alex Merced
+By Alex Merced
 
-## Goal of Exercises
+![Ken & Ryu Battling Akuma](https://media.giphy.com/media/5h9rfUCaJf916/giphy.gif)
+
+## Objectives
 
 - Practice Creating Classes 
 - Instantiating Objects
 - Having Objects Interact with Each Other
-
-![Ken & Ryu Battling Akuma](https://pm1.narvii.com/7071/2f1fb115fece57861eaadf639a7baa28e44d9f9fr1-1024-682v2_uhq.jpg)
 
 ## Game Synopsis
 
