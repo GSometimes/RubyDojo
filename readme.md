@@ -61,7 +61,7 @@ Reveal
 ```ruby
     def attack(opp)
         opp.life = opp.life - (@strength - opp.defense)
-        puts "#{opp.name} now have #{opp.life} life left"
+        puts "#{opp.name} now has #{opp.life} life left"
     end
 ```
 </p>
@@ -77,7 +77,7 @@ ryu.attack(ken)
 puts ken.life
 ```
 
-#### Dojo Class
+### Dojo Class
 
 This class represents how the fighter trains each week, so the methods represent activites at the dojo. There is only one dojo so all the methods should be class methods no instance methods.
 
