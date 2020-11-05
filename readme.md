@@ -6,6 +6,8 @@ By Alex Merced
 
 ![Ken & Ryu Battling Akuma](https://media.giphy.com/media/5h9rfUCaJf916/giphy.gif)
 
+*If you get stuck at anypoint look up the two Wild West Shooter videos in this playlist to give you an idea on how to approach this homework => https://www.youtube.com/playlist?list=PLY6oTPmKnKbZp8Kh6jS5A6j-6H2kGY12e*
+
 ## Objectives
 
 - Practice Creating Classes 
