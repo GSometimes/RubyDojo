@@ -40,14 +40,23 @@ When creating any application we should first define our classes that we will be
 
 ### Fighter Class 🤼
 
-#### Instance properties
+#### 🍬 Instance properties
 
 ```ruby
-# name => string : has getter no setter
-# defense => number: has getter and setter
-# strength => number : has getter and setter
-# luck => number : has getter and setter
-# life => number : has getter and setter
+# name
+# => string : has getter no setter
+
+# defense
+# => number: has getter and setter
+
+# strength
+# => number : has getter and setter
+
+# luck
+# => number : has getter and setter
+
+# life
+# => number : has getter and setter
 
 ❗ *getters* are methods to get a value
 
@@ -56,9 +65,13 @@ When creating any application we should first define our classes that we will be
 
 **HINT:** To make it easier to create your getter and setters google attr_accessor, attr_reader and attr_writer
 
-#### Fighter Methods  
+#### 🍬 Fighter Methods  
 
-attack(opponent) => function that takes opponent object as argument and does damage equal to strength
+````ruby
+# attack(opponent)
+# => function that takes `opponent` object as argument and does damage equal to strength
+
+```
 
 **HINT**
 
